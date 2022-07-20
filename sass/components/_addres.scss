@@ -1,0 +1,31 @@
+.addres__list {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.addres__link--darck {
+  line-height: 1.71em;
+  color: var(--white-color);
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.addres__link--darck:hover,
+.addres__link--darck:focus {
+  color: var(--accent-color);
+}
+
+.addres__list .link {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.addres__list .link:hover,
+.addres__list .link:focus {
+  color: var(--accent-color);
+}
+
+.addres__item:not(:first-child) {
+  margin-top: 9px;
+}
