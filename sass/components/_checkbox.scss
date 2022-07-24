@@ -1,8 +1,13 @@
 .checkbox {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71em;
+  font-size: 12px;
+  line-height: 1.17em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71em;
+  }
 }
 .checkbox__custom-check {
   display: inline-flex;
