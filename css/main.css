@@ -536,6 +536,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    height: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -609,6 +615,11 @@ img {
           flex-direction: column;
   position: relative;
 }
+@media screen and (max-width: 479px) {
+  .form__field {
+    width: 100%;
+  }
+}
 .form__field:not(first-child) {
   margin-top: 10px;
 }
@@ -627,6 +638,11 @@ img {
   margin-top: 4px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form__input {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__input {
@@ -651,6 +667,11 @@ img {
   cursor: pointer;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form__comment {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__comment {
@@ -760,10 +781,11 @@ img {
   line-height: 1.56em;
   letter-spacing: 0.03em;
   padding: 63px 24px;
+  overflow: auto;
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -789,6 +811,10 @@ img {
   .mobile-menu__btn {
     display: none;
   }
+}
+.mobile-menu__btn.is-open {
+  position: fixed;
+  right: 25px;
 }
 
 .mobile-menu__burger {
@@ -1007,14 +1033,14 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.out-nav__link:hover, .out-nav__link:focus {
-  color: var(--accent-color);
-}
 @media screen and (min-width: 1200px) {
-  .out-nav__link:hover, .out-nav__link:focus {
+  .out-nav__link {
     font-size: 14px;
     line-height: 1.14em;
   }
+}
+.out-nav__link:hover, .out-nav__link:focus {
+  color: var(--accent-color);
 }
 .out-nav__icon {
   fill: currentColor;
@@ -1031,7 +1057,7 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -1062,6 +1088,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
     padding-top: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero_lg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_lg.jpg);
@@ -1088,7 +1115,7 @@ img {
   .hero__title {
     font-size: 44px;
     line-height: 1.36em;
-    width: 696px;
+    max-width: 696px;
   }
 }
 .hero__btn {
@@ -1143,6 +1170,12 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-top: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feature__title {
+    text-align: start;
+  }
 }
 
 .feature__descr {
@@ -1156,7 +1189,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .work {
-    display: inline;
+    display: block;
   }
 }
 
@@ -1448,7 +1481,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .footer__subscription {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__subscription {
@@ -1505,6 +1542,11 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input {

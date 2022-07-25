@@ -1,6 +1,6 @@
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -33,6 +33,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    height: 600px;
     padding-top: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/hero_lg.jpg);
@@ -60,7 +61,7 @@
   @media screen and (min-width: 1200px) {
   font-size: 44px;
   line-height: 1.36em;
-  width: 696px;
+  max-width: 696px;
   }
   }
 

@@ -37,6 +37,11 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-top: 30px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .feature__descr {
